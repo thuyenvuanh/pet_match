@@ -92,10 +92,10 @@ BEGIN
             VALUE "CompanyName", "com.example" "\0"
             VALUE "FileDescription", "pet_match" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pet_match" "\0"
+            VALUE "InternalName", "PetMatch" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pet_match.exe" "\0"
-            VALUE "ProductName", "pet_match" "\0"
+            VALUE "OriginalFilename", "PetMatch.exe" "\0"
+            VALUE "ProductName", "PetMatch" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

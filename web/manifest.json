@@ -1,6 +1,6 @@
 {
-    "name": "pet_match",
-    "short_name": "pet_match",
+    "name": "PetMatch",
+    "short_name": "PetMatch",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
