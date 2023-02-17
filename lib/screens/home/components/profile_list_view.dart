@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'information.dart';
+import '../../../components/information.dart';
 
 class ProfileListView extends StatelessWidget {
   const ProfileListView({

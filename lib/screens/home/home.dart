@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:pet_match/components/circle_icon_button.dart';
-import 'package:pet_match/components/comment_dialog.dart';
-import 'package:pet_match/components/profile_image.dart';
-import 'package:pet_match/components/profile_list_view.dart';
+import 'package:pet_match/screens/home/components/comment_dialog.dart';
+import 'package:pet_match/screens/home/components/profile_image.dart';
+import 'package:pet_match/screens/home/components/profile_list_view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -99,10 +99,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPress: commentProfile,
                   color: const Color(0xFFF3BB6B),
                 ),
-                CircleIconButton(
-                  icon: const Icon(Ionicons.heart_outline, color: Colors.white),
-                  onPress: loveProfile,
-                  color: const Color(0xFFD43C4C),
+                Hero(
+                  tag: 'SendLike',
+                  child: CircleIconButton(
+                    icon:
+                        const Icon(Ionicons.heart_outline, color: Colors.white),
+                    onPress: () {},
+                    color: const Color(0xFFD43C4C),
+                  ),
                 ),
               ],
             ),
