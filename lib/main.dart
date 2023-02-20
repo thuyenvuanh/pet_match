@@ -12,7 +12,6 @@ import 'theme/custom_color.g.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  // await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
   runApp(const PetMatch());
 }
 

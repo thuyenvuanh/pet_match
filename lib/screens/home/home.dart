@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:pet_match/components/circle_icon_button.dart';
 import 'package:pet_match/screens/home/components/comment_dialog.dart';
 import 'package:pet_match/screens/home/components/profile_image.dart';
 import 'package:pet_match/screens/home/components/profile_list_view.dart';
+import 'package:pet_match/screens/profile/profile.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,7 +16,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   openUserCenter() {
-    print('Opening User Center');
+    Navigator.push(
+        context, CupertinoPageRoute(builder: (_) => const ProfileScreen()));
   }
 
   openDirectMessage() {
@@ -54,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Positioned(
-            top: MediaQuery.of(context).padding.top,
+            top: MediaQuery.of(context).viewPadding.top,
             child: Container(
               height: 76,
               width: MediaQuery.of(context).size.width,
